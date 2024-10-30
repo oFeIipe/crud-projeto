@@ -46,4 +46,10 @@ public class PostController {
             throw new EntityNotFoundException();
         }
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deletePost(@PathVariable String id){
+        repository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
 }
