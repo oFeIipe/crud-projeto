@@ -1,6 +1,5 @@
 package com.example.crud_posts.domain.posts;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 
